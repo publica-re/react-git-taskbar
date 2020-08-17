@@ -10,7 +10,7 @@ export default {
   component: Dialog.Snackbar,
   argTypes: {
     messages: { control: 'array', separator: ',' },
-    duration: { control: 'range', min: 0, max: 10000, step: 100 },
+    duration: { control: { type: 'range', min: 0, max: 10000, step: 100 } },
   },
 } as Meta;
 
