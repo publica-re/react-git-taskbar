@@ -3,7 +3,8 @@ import React from 'react';
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
 import { Story, Meta } from '@storybook/react';
 import { Utils } from '../Components';
-import { GitStatusOption } from 'react-git-provider';
+import { GitStatusOption } from '@publica.re/react-git-provider';
+import { decorators } from './decorators';
 
 export default {
   title: 'Utils/TreeRender',
@@ -34,6 +35,7 @@ const Template: Story<Utils.TreeRenderProps> = (args) => (
 );
 
 export const Default = Template.bind({});
+Default.decorators = decorators;
 Default.args = {
   contextMenu: true,
   data: {

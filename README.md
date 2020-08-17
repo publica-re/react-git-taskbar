@@ -1,8 +1,8 @@
-# react-git-taskbar
+# @publica.re/react-git-taskbar
 
 > Gittify your webpage
 
-See the [docs](https://react-git-taskbar.publica.re) !
+See the [docs](https://@publica.re/react-git-taskbar.publica.re) !
 
 ## License
 

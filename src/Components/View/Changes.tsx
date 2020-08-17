@@ -3,7 +3,7 @@ import * as React from 'react';
 import * as Intl from 'react-i18next';
 import bind from 'bind-decorator';
 
-import Git from 'react-git-provider';
+import Git from '@publica.re/react-git-provider';
 
 import '../../theme';
 

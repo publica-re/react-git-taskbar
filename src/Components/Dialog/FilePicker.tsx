@@ -6,7 +6,7 @@ import pathUtils from 'path';
 
 import '../../theme';
 
-import Git from 'react-git-provider';
+import Git from '@publica.re/react-git-provider';
 import { Utils } from '..';
 
 export interface FilePickerProps {

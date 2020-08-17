@@ -33,8 +33,6 @@ class Snackbar extends React.Component<
 
   @bind
   clearMessages(qty: number): void {
-    console.log('clearing', qty);
-
     this.setState(({ messages }) => ({
       messages: messages.slice(qty),
     }));

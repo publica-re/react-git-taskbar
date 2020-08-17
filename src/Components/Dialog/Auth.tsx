@@ -5,7 +5,7 @@ import * as UI from '@fluentui/react';
 import { GitAuth } from 'isomorphic-git';
 import bind from 'bind-decorator';
 
-import Git from 'react-git-provider';
+import Git from '@publica.re/react-git-provider';
 
 import * as API from '../../API';
 import '../../theme';

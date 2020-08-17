@@ -3,7 +3,7 @@ import * as Intl from 'react-i18next';
 import * as UI from '@fluentui/react';
 import bind from 'bind-decorator';
 
-import Git, { BranchList } from 'react-git-provider';
+import Git, { BranchList } from '@publica.re/react-git-provider';
 
 import '../../theme';
 

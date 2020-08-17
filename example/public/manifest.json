@@ -1,6 +1,6 @@
 {
-  "short_name": "react-git-taskbar",
-  "name": "react-git-taskbar",
+  "short_name": "@publica.re/react-git-taskbar",
+  "name": "@publica.re/react-git-taskbar",
   "icons": [
     {
       "src": "favicon.ico",

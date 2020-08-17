@@ -31,7 +31,7 @@ export default create({
   inputTextColor: 'black',
   inputBorderRadius: 4,
 
-  brandTitle: 'react-git-taskbar',
+  brandTitle: '@publica.re/react-git-taskbar',
   brandUrl: 'https://publica.re',
   brandImage:
     'https://git.publica.re/uploads/-/system/appearance/logo/1/publicare.png',

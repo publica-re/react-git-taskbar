@@ -3,7 +3,7 @@ import * as Intl from 'react-i18next';
 import * as UI from '@fluentui/react';
 import bind from 'bind-decorator';
 
-import Git, { GitComponentState } from 'react-git-provider';
+import Git, { GitComponentState } from '@publica.re/react-git-provider';
 
 import '../../theme';
 

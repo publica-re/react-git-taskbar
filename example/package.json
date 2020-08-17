@@ -1,5 +1,5 @@
 {
-  "name": "react-git-taskbar-example",
+  "name": "@publica.re/react-git-taskbar-example",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -19,7 +19,7 @@
     "dotenv": "^8.2.0",
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
-    "react-git-taskbar": "link:..",
+    "@publica.re/react-git-taskbar": "link:..",
     "react-scripts": "link:../node_modules/react-scripts",
     "typescript": "link:../node_modules/typescript"
   },

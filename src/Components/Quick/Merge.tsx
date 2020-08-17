@@ -7,7 +7,7 @@ import bind from 'bind-decorator';
 import Git, {
   MergeConflictSolution,
   GitComponentState,
-} from 'react-git-provider';
+} from '@publica.re/react-git-provider';
 import '../../theme';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars

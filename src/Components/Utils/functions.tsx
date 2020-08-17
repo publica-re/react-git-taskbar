@@ -4,7 +4,7 @@ import {
   FileStatus,
   DirectoryList,
   FileList,
-} from 'react-git-provider';
+} from '@publica.re/react-git-provider';
 import pathUtils from 'path';
 
 import i18n from '../../i18n';

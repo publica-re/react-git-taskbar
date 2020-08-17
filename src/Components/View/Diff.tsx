@@ -5,7 +5,7 @@ import bind from 'bind-decorator';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import DiffViewer, { DiffMethod } from 'react-diff-viewer';
 
-import Git, { GitComponentState } from 'react-git-provider';
+import Git, { GitComponentState } from '@publica.re/react-git-provider';
 
 import '../../theme';
 

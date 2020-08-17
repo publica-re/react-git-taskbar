@@ -4,6 +4,7 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import { ActionMenu } from '../Components';
 import { ActionMenuProps } from '../Components/ActionMenu';
+import { decorators } from './decorators';
 
 export default {
   title: 'ActionMenu',
@@ -17,6 +18,7 @@ export default {
 const Template: Story<ActionMenuProps> = (args) => <ActionMenu {...args} />;
 
 export const Default = Template.bind({});
+Default.decorators = decorators;
 Default.args = {
   behaviour: 'gitlab',
 };

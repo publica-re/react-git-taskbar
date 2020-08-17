@@ -3,7 +3,7 @@ import * as Intl from 'react-i18next';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import * as UI from '@fluentui/react';
 
-import Git from 'react-git-provider';
+import Git from '@publica.re/react-git-provider';
 
 import '../../theme';
 

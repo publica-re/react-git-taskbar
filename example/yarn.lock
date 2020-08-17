@@ -9134,9 +9134,9 @@ react-error-overlay@^6.0.7:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.7.tgz#1dcfb459ab671d53f660a991513cb2f0a0553108"
   integrity sha512-TAv1KJFh3RhqxNvhzxj6LeT5NWklP6rDr2a0jaTfsZ5wSZWHOGeqQyejUp3xxLfPt2UpyJEcVQB/zyPcmonNFA==
 
-react-git-provider@^0.0.1:
+@publica.re/react-git-provider@^0.0.1:
   version "0.0.1"
-  resolved "https://registry.yarnpkg.com/react-git-provider/-/react-git-provider-0.0.1.tgz#fcced56cc14f08db4d9107fc2b38c7dec749960d"
+  resolved "https://registry.yarnpkg.com/@publica.re/react-git-provider/-/@publica.re/react-git-provider-0.0.1.tgz#fcced56cc14f08db4d9107fc2b38c7dec749960d"
   integrity sha512-3NGTIDja1vsjPlQg+k375q0txwK/ksHLVnM18fRdkz9VbCL8Y6t031ETLQoDzgP5y5oTnYTyJzf91bizrPPF9w==
   dependencies:
     "@isomorphic-git/lightning-fs" "^4.3.0"
@@ -9151,7 +9151,7 @@ react-git-provider@^0.0.1:
     lodash "^4.17.19"
     path "^0.12.7"
 
-"react-git-taskbar@link:..":
+"@publica.re/react-git-taskbar@link:..":
   version "0.0.0"
   uid ""
 

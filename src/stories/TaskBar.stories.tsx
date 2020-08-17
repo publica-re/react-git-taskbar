@@ -21,8 +21,8 @@ const Template: Story<TaskBarProps> = (args) => <TaskBar {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  repositoryUri: 'https://git.publica.re/root/playground',
+  repositoryUri: 'https://git.publica.re/playground/playground.git',
   corsProxy: 'http://git.publica.re/proxy',
-  author: { name: 'react-git-taskbar', email: 'dev@publica.re' },
+  author: { name: '@publica.re/react-git-taskbar', email: 'dev@publica.re' },
   behaviour: undefined,
 };

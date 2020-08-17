@@ -1,5 +1,5 @@
 import React from 'react';
-import { TaskBar, View, Dialog } from 'react-git-taskbar';
+import { TaskBar, View, Dialog } from '@publica.re/react-git-taskbar';
 
 export interface AppState {
   filePath: string | null;

@@ -4,7 +4,7 @@ import * as Intl from 'react-i18next';
 import * as UI from '@fluentui/react';
 import bind from 'bind-decorator';
 
-import Git, { GitStatusOption } from 'react-git-provider';
+import Git, { GitStatusOption } from '@publica.re/react-git-provider';
 
 import '../../theme';
 

@@ -3,7 +3,7 @@ import * as Intl from 'react-i18next';
 import * as UI from '@fluentui/react';
 import bind from 'bind-decorator';
 
-import { MergeConflictSolution } from 'react-git-provider';
+import { MergeConflictSolution } from '@publica.re/react-git-provider';
 
 import '../../theme';
 

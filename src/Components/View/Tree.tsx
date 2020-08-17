@@ -6,7 +6,10 @@ import { generate as generateId } from 'shortid';
 import mime from 'mime';
 import JSZip from 'jszip';
 
-import Git, { GitStatusOption, DirectoryList } from 'react-git-provider';
+import Git, {
+  GitStatusOption,
+  DirectoryList,
+} from '@publica.re/react-git-provider';
 
 import '../../theme';
 

@@ -1,5 +1,5 @@
 import pathUtils from 'path';
-import { GitAuth } from 'react-git-provider';
+import { GitAuth } from '@publica.re/react-git-provider';
 
 export type APIProfile = {
   username: string;

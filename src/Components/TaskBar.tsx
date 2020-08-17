@@ -3,7 +3,7 @@ import * as UI from '@fluentui/react';
 import bind from 'bind-decorator';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import Git, { AuthComponentProps } from 'react-git-provider';
+import Git, { AuthComponentProps } from '@publica.re/react-git-provider';
 
 import '../theme';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -42,7 +42,7 @@ class TaskBar extends React.Component<TaskBarProps, TaskBarState> {
     corsProxy: 'https://cors.isomorphic-git.org/',
   };
   public static defaultAuthor = {
-    name: 'react-git-taskbar',
+    name: '@publica.re/react-git-taskbar',
     email: 'contact@publica.re',
   };
 
