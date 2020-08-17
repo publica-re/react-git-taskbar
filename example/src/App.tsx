@@ -34,7 +34,7 @@ export default class App extends React.Component<{}, AppState> {
   render() {
     return (
       <TaskBar
-        repositoryUri='https://github.com/git/git'
+        repositoryUri='https://git.publica.re/root/playground.git'
         corsProxy={'http://localhost:9415'}
         onEdit={this.setFilePath}
       >
