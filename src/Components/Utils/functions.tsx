@@ -34,7 +34,7 @@ export function dataToTree(
   }
   const treeFiles = tree.type === 'directory' ? getAllFiles(tree) : [];
   const statusTreeFiles = Object.keys(statusTree);
-  const joinedFiles = new Set([...treeFiles, ...statusTreeFiles]);
+  const joinedFiles = Array.from(new Set([...treeFiles, ...statusTreeFiles]));
   const dirs = new Set();
   const outputDirs: TreeViewData[] = [];
   for (const file of joinedFiles) {
@@ -44,16 +44,17 @@ export function dataToTree(
     }, '/');
   }
   for (const dir of dirs) {
+    const children = joinedFiles
+      .filter((f) => pathUtils.dirname(f) === dir)
+      .map((f) => ({
+        id: f,
+        name: pathUtils.basename(f),
+        details: statusTree[f],
+      }));
     outputDirs.push({
       id: dir as string,
       name: pathUtils.basename(dir as string) || (dir as string),
-      children: [...joinedFiles]
-        .filter((f) => pathUtils.dirname(f) === dir)
-        .map((f) => ({
-          id: f,
-          name: pathUtils.basename(f),
-          details: statusTree[f],
-        })),
+      children: children,
     });
   }
   for (const dir of outputDirs) {
@@ -85,7 +86,7 @@ export function changeTree(
   }
   const treeFiles = tree.type === 'directory' ? getAllFiles(tree) : [];
   const statusTreeFiles = Object.keys(statusTree);
-  const joinedFiles = new Set([...treeFiles, ...statusTreeFiles]);
+  const joinedFiles = Array.from(new Set([...treeFiles, ...statusTreeFiles]));
   const staged = [];
   const notStaged = [];
   for (const file of joinedFiles) {

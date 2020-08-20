@@ -28,11 +28,13 @@ export interface TaskBarState {
 const theme = UI.getTheme();
 const contentClass = UI.mergeStyles([
   {
-    display: 'flex',
-    height: 'calc(100vh - 4em)',
-    width: '100vw',
-    overflowY: 'auto',
-    overflowX: 'hidden',
+    display: 'grid',
+    width: '100%',
+    height: '100%',
+    gridTemplateAreas: `'content'
+'menu'`,
+    gridTemplateRows: '1fr 4em',
+    gridTemplateColumns: '1fr',
     backgroundColor: theme.palette.neutralLighterAlt,
   },
 ]);
@@ -87,14 +89,16 @@ class TaskBar extends React.Component<TaskBarProps, TaskBarState> {
             }))
           }
         >
-          <UI.Fabric>
-            <UI.Stack>
-              <div className={contentClass}>{this.props.children}</div>
-              <ActionMenu
-                behaviour={this.props.behaviour}
-                onEdit={this.props.onEdit}
-              />
-            </UI.Stack>
+          <UI.Fabric style={{ width: '100%', height: '100%' }}>
+            <div className={contentClass}>
+              <div style={{ gridArea: 'content' }}>{this.props.children}</div>
+              <div style={{ gridArea: 'menu' }}>
+                <ActionMenu
+                  behaviour={this.props.behaviour}
+                  onEdit={this.props.onEdit}
+                />
+              </div>
+            </div>
           </UI.Fabric>
         </Git.Provider>
         <Dialog.Snackbar messages={this.state.messages} />

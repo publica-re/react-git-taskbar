@@ -20,15 +20,23 @@ const contentClass = UI.mergeStyles([
     display: 'flex',
     flex: '1',
     height: '100%',
-    overflow: 'hidden',
   },
 ]);
 
-const inputClass = UI.mergeStyles([
-  {
+const inputStyle: Partial<UI.ITextFieldStyles> = {
+  root: {
     height: '100%',
   },
-]);
+  fieldGroup: {
+    height: '100%',
+  },
+  field: {
+    height: '100%',
+  },
+  wrapper: {
+    height: '100%',
+  },
+};
 
 class Editor extends Git.Component<
   EditorProps & Intl.WithTranslation,
@@ -89,9 +97,8 @@ class Editor extends Git.Component<
         </UI.PrimaryButton>
         <UI.TextField
           multiline
-          className={inputClass}
           borderless={true}
-          style={{ height: 'calc(100vh - 6em)' }}
+          styles={inputStyle}
           onChange={(_event: React.FormEvent, newValue?: string): void => {
             newValue &&
               this.setState({

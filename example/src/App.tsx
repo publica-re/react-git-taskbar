@@ -1,5 +1,6 @@
 import React from 'react';
 import { TaskBar, View, Dialog } from '@publica.re/react-git-taskbar';
+import './App.css';
 
 export interface AppState {
   filePath: string | null;
@@ -34,8 +35,12 @@ export default class App extends React.Component<{}, AppState> {
   render() {
     return (
       <TaskBar
-        repositoryUri='https://git.publica.re/root/playground.git'
-        corsProxy={'http://localhost:9415'}
+        repositoryUri='https://git.publica.re/playground/playground.git'
+        corsProxy={'http://git.publica.re/proxy'}
+        author={{
+          name: '@publica.re/react-git-taskbar',
+          email: 'dev@publica.re',
+        }}
         onEdit={this.setFilePath}
       >
         {this.state.filePath ? (
@@ -44,8 +49,8 @@ export default class App extends React.Component<{}, AppState> {
           <div
             style={{
               display: 'flex',
-              width: '100vw',
-              height: '100vh',
+              flex: '1',
+              height: '100%',
               alignItems: 'center',
               justifyContent: 'center',
             }}
