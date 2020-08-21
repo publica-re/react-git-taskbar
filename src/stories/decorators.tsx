@@ -3,14 +3,14 @@ import React from 'react';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import Git from '@publica.re/react-git-provider';
 
-const repo = 'https://git.publica.re/playground/playground.git';
+const repo = 'https://git.publica.re/root/playground.git';
 
 export const decorators = ([
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   (Story: React.ComponentClass): React.ReactElement => (
     <Git.Provider
       url={repo}
-      corsProxy='http://git.publica.re/proxy'
+      corsProxy={false}
       auth={{
         type: 'set',
         value: {
